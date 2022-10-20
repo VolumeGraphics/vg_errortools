@@ -14,7 +14,8 @@ use std::path::{Path, PathBuf};
 
 /// # A wrapper for io::Error which also contains the file path it failed on
 /// This error comprises a `std::io::Error` as source and a `Pathbuf` containing the file path the operation failed on.
-/// Consider using this together with [`fat_io_wrap_std`] for std::io functions and [`fat_io_wrap_tokio`] for tokio-async based.
+/// Consider using this together with [`fat_io_wrap_std`] for std::io functions.
+/// With the feature 'tokio' there's also: `fat_io_wrap_tokio` for tokio-async based functions.
 #[derive(Debug)]
 pub struct FatIOError {
     source: std::io::Error,

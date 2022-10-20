@@ -53,13 +53,13 @@ impl Error for FatIOError {
 /// # Examples
 /// ```rust, no_run
 /// use std::fs::File;
-/// use errortools::fat_io_wrap_std;
+/// use vg_errortools::fat_io_wrap_std;
 /// let file_result = fat_io_wrap_std("my_file.txt", &File::open);
 /// ```
 ///
 /// ```rust, no_run
 /// use std::fs::read_to_string;
-/// use errortools::fat_io_wrap_std;
+/// use vg_errortools::fat_io_wrap_std;
 /// let to_string_result = fat_io_wrap_std("my_file.txt", &read_to_string);
 /// ```
 ///
@@ -109,7 +109,7 @@ pub async fn fat_io_wrap_tokio<T, P: AsRef<Path>, F: Future<Output = std::io::Re
 /// # An error wrapper for usage in the main functions printing better human readable errors from e.g. `thiserror` crate.
 /// Examples:
 /// ```rust, no_run
-/// use errortools::MainError;
+/// use vg_errortools::MainError;
 /// use thiserror::Error;
 /// #[derive(Error, Debug)]
 /// pub enum SubError {

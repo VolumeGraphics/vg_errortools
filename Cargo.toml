@@ -1,0 +1,17 @@
+[package]
+name = "vg_errortools"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Helpers for better error legibility in std/tokio io errors and error handling in main functions."
+authors = ["Volume Graphics GmbH"]
+repository = "https://github.com/VolumeGraphics/vg_errortools"
+homepage = "https://github.com/VolumeGraphics/vg_errortools"
+documentation = "https://docs.rs/vg_errortools"
+
+[features]
+tokio = ["dep:tokio"]
+
+[dependencies]
+tokio = {version = "1.19",features = ["fs"], optional = true}
+thiserror = "1.0"

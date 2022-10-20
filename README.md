@@ -1,4 +1,6 @@
 [![Documentation](https://docs.rs/vg_errortools/badge.svg)](https://docs.rs/vg_errortools)
+![CI](https://github.com/VolumeGraphics/vg_errortools/actions/workflows/rust.yml/badge.svg?branch=main "CI")
+
 # vg_errortools - Small error utilities
 
 This crate comprises mainly helpers for generating fat io errors - errors which carry the path of the file it failed with them.

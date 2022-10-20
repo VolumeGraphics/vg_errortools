@@ -1,4 +1,4 @@
-#![crate_name = "errortools"]
+#![crate_name = "vg_errortools"]
 //! # Tooling for better human readable errors
 //!
 #![warn(missing_docs)]
